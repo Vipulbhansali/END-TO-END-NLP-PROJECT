@@ -4,7 +4,7 @@ import os
 import sys
 from pathlib import Path
 
-import mlflow
+import mlflow  # type: ignore
 
 # Directories
 ROOT_DIR = Path(__file__).parent.parent.absolute()
