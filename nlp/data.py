@@ -6,7 +6,7 @@ import pandas as pd
 import ray
 from ray.data import Dataset
 from sklearn.model_selection import train_test_split
-from transformers import BertTokenizer # type: ignore
+from transformers import BertTokenizer  # type: ignore
 
 from nlp.config import STOPWORDS
 
