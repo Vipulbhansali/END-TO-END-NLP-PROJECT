@@ -56,4 +56,3 @@ The pre-commit hooks are configured in the `.pre-commit-config.yaml` file.
 1. **Install Pre-commit**:
    ```sh
    pip install pre-commit
-
