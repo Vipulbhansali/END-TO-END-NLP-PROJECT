@@ -33,26 +33,3 @@ The `style` task runs code formatting and linting tools to ensure the code adher
 make style
 
 
-## Pre-commit Hooks
-
-This project uses pre-commit hooks to ensure code quality and maintain project hygiene. These hooks run automatically before each commit to check for and fix common issues.
-
-### Installed Hooks
-
-- **Trailing Whitespace**: Removes trailing whitespace from all files.
-- **End of File Fixer**: Ensures all files end with a newline.
-- **Check Merge Conflict**: Checks for unresolved merge conflict markers.
-- **Check YAML**: Validates YAML files for syntax errors.
-- **Check Added Large Files**: Checks for files larger than 1000 KB (excluding `notebooks` directory).
-- **Check YAML (mkdocs.yml excluded)**: Excludes validation for `mkdocs.yml`.
-- **Clean**: Runs `make clean` to remove unnecessary files.
-
-### Configuration
-
-The pre-commit hooks are configured in the `.pre-commit-config.yaml` file.
-
-### Setup
-
-1. **Install Pre-commit**:
-   ```sh
-   pip install pre-commit
