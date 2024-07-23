@@ -5,7 +5,7 @@ import tempfile
 from typing import Tuple
 
 import numpy as np
-import ray
+import ray # type: ignore
 import ray.train as train
 import torch
 import torch.nn as nn
@@ -20,14 +20,14 @@ from ray.train import (
     RunConfig,
     ScalingConfig,
 )
-from ray.train.torch import TorchTrainer
+from ray.train.torch import TorchTrainer # type: ignore
 from torch.nn.parallel.distributed import DistributedDataParallel
 from transformers import BertModel
 from typing_extensions import Annotated
 
-from madewithml import data, utils
-from madewithml.config import EFS_DIR, MLFLOW_TRACKING_URI, logger
-from madewithml.models import FinetunedLLM
+from nlp import data, utils
+from nlp.config import EFS_DIR, MLFLOW_TRACKING_URI, logger
+from nlp.models import FinetunedLLM
 
 # Initialize Typer CLI app
 app = typer.Typer()
