@@ -8,22 +8,6 @@ We are training a machine learning model using a custom training script with con
 
 We are performing hyperparameter tuning on a machine learning model using a custom tuning script built with Python. The process is powered by Ray Tune with Hyperopt integration to efficiently explore and optimize hyperparameters. We set an experiment name, specify the dataset location, and define initial parameters, including training loop configurations like dropout probability and learning rate. Multiple runs and worker configurations are used to optimize the model's performance. The results of the tuning process are saved for further analysis, with the script leveraging both CPU and GPU resources for efficient processing.
 
-
-## Distributed Training with Ray and PyTorch
-
-### Configuration
-
-- **Scaling**: Distributed training across multiple nodes/workers using Ray.
-- **Run Configuration**: Customizable hyperparameters, batch sizes, and epochs.
-- **Data Configuration**: Dataset loading with preprocessing; skips redundant steps during training.
-- **Checkpoints**: Automatic saving and loading of model states for fault tolerance and training resumption.
-
-### Steps to Run
-
-1. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-
 ## Configuration
 - **Black**: Black is an in-place reformatter that (mostly) adheres to PEP8.
 - **isort**: isort sorts and formats import statements inside Python scripts.
