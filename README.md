@@ -1,5 +1,14 @@
 # PRODUCTION-NLP
 
+## Training the Model
+
+We are training a machine learning model using a custom training script with configurable parameters. The training process is defined by setting an experiment name, specifying the dataset location, and providing training loop configurations such as dropout probability, learning rate, and learning rate scheduling. The training is executed with specified resource allocations like CPU, GPU, and batch size, and the results are saved for further analysis.
+
+## Hyperparameter Tuning
+
+We are performing hyperparameter tuning on a machine learning model using a custom tuning script built with Python. The process is powered by Ray Tune with Hyperopt integration to efficiently explore and optimize hyperparameters. We set an experiment name, specify the dataset location, and define initial parameters, including training loop configurations like dropout probability and learning rate. Multiple runs and worker configurations are used to optimize the model's performance. The results of the tuning process are saved for further analysis, with the script leveraging both CPU and GPU resources for efficient processing.
+
+
 ## Distributed Training with Ray and PyTorch
 
 ### Configuration
@@ -14,9 +23,6 @@
 1. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
-
-
-
 
 ## Configuration
 - **Black**: Black is an in-place reformatter that (mostly) adheres to PEP8.
